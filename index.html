@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Smit Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="relative">
+
+    <!-- Social Side Icons -->
+    <div id="social-links" aria-label="Social media links" role="navigation">
+        <a href="https://github.com/Coding-smit" target="_blank" aria-label="Github profile" rel="noopener noreferrer"
+            tabindex="0">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577V19.52c-3.338.726-4.042-1.61-4.042-1.61C4.422 16.11 3.633 15.8 3.633 15.8c-1.087-.744.083-.728.083-.728 1.205.085 1.838 1.236 1.838 1.236 1.07 1.834 2.807 1.304 3.492.997.107-.775.42-1.304.763-1.604-2.665-.3-5.466-1.335-5.466-5.933 0-1.31.47-2.38 1.237-3.222-.124-.302-.536-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.513 11.513 0 013.003-.404 11.5 11.5 0 013.003.405c2.293-1.553 3.299-1.23 3.299-1.23.654 1.653.242 2.874.118 3.176.77.842 1.235 1.911 1.235 3.222 0 4.608-2.804 5.63-5.475 5.922.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 21.796 24 17.294 24 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/smit-patel-d69" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn profile" tabindex="0">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="#d3d3d3" width="24" height="24">
+                <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.039-1.852-3.039-1.854 0-2.137 1.445-2.137 2.939v5.669H9.354V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.37-1.852 3.604 0 4.27 2.371 4.27 5.455v6.288zM5.337 7.433a2.07 2.07 0 11-.001-4.139 2.07 2.07 0 01.001 4.139zm1.777 13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.224.792 24 1.771 24h20.451C23.2 24 24 23.224 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
+            </svg>
+        </a>
+        <a href="https://www.instagram.com/_patel_smit_69" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram profile" tabindex="0">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="#d3d3d3" width="24" height="24">
+                <path
+                    d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm4.75-.88a1.125 1.125 0 110 2.25 1.125 1.125 0 010-2.25z" />
+            </svg>
+        </a>
+
+    </div>
+
+    <!-- Header -->
+    <header class="flex justify-between items-center px-6 py-6 max-w-7xl mx-auto">
+        <div class="flex items-center gap-2 font-bold text-lg text-purple-400 select-none" aria-label="Logo">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 17v-6a4 4 0 018 0v6m-9 4h10M21 12v7a4 4 0 01-4 4h-8a4 4 0 01-4-4v-7" />
+            </svg>
+            Smit
+        </div>
+
+        <nav aria-label="Primary" role="navigation" class="hidden md:flex gap-8 select-none" id="my">
+            <a href="#home" class="active" tabindex="0">#home</a>
+            <a href="#projects" tabindex="0">#projects</a>
+            <a href="#skills" tabindex="0">#skills</a>
+            <a href="#about-me" tabindex="0">#about-me</a>
+            <a href="#contacts" tabindex="0">#contact-me</a>
+
+
+        </nav>
+    </header>
+
+    <main id="home" class="max-w-7xl mx-auto px-6">
+
+        <!-- Hero Section -->
+        <section aria-label="Introduction and profile"
+            class="flex flex-col md:flex-row items-center gap-12 md:gap-24 py-10 md:py-20">
+            <div class="flex-1 max-w-xl">
+                <h1 class="text-3xl md:text-4xl font-semibold text-white leading-snug">
+                    Hi, I’m a <span class="text-purple-300">web designer</span> and <br />
+                    <span class="text-purple-300">front-end developer</span>
+                </h1>
+                <p class="text-gray-400 mt-5 font-light text-sm max-w-md">
+                    I'm currently into frontend Dev,UI/UX ,backend Dev
+                </p>
+                <button class="scroll-btn mt-6" aria-label="Scroll down to projects section"
+                    onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+                    Scroll Down
+                    <span aria-hidden="true">↓</span>
+                </button>
+            </div>
+
+            <div class="relative flex-1 flex justify-center">
+                <div class="absolute w-32 h-32 border-2 border-purple-800 rounded-lg left-4 top-12 pointer-events-none"
+                    aria-hidden="true"></div>
+                <div class="absolute w-40 h-40 border-2 border-purple-800 rounded-lg right-0 top-24 pointer-events-none"
+                    aria-hidden="true"></div>
+                <img src="assets/logoimage-removebg-preview.png" id="image1"
+                    alt="Smit Portfolio self image" class="relative rounded-lg shadow-lg w-60 h-auto object-cover" />
+                <div class="absolute bottom-0 left-0 bg-purple-800 text-white rounded-sm text-xs px-2 py-0.5 flex items-center gap-2 font-mono select-none"
+                    style="font-weight:700">
+                    <span class="w-3 h-3 bg-purple-400 inline-block rounded-sm"></span>
+                    Currently working on <strong>Portfolio</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <blockquote class="quote-box" aria-label="Quote about control illusions">
+           Truth can be heavy to carry. But sometimes a beautiful
+            lie gives you the strength to move forward.
+            <footer class="quote-author" aria-label="Quote author">- Mr. Who</footer>
+        </blockquote>
+
+        <!-- Projects Section -->
+        <section id="projects" aria-labelledby="projects-title" class="my-16">
+            <div class="section-header">
+                <h2 id="projects-title" class="section-title"><span>#projects</span> <span class="line-gradient"></span>
+                </h2>
+                <a href="https://github.com/coding-smit?tab=repositories" target="_blank" rel="noopener noreferrer"
+                    class="section-link" aria-label="View all projects on Github">View all →</a>
+            </div>
+            <div class="projects-grid" role="list">
+
+                <article class="project-card border-box" role="listitem" tabindex="0"
+                    aria-label="IIITApfolio project details">
+                    <p class="project-subtitle">HTML CSS JS Simple Projects for begginers </p>
+                    <h3 class="project-title">Todo-list app</h3>
+                    <p class="project-desc">Acads/Non-Acads Portfolio Of B-tech Students</p>
+                    <a href="" target="_blank" rel="noopener noreferrer"
+                        class="project-live-btn" aria-label="Live demo of IIITApfolio">
+                        Live ⇌
+                    </a>
+                </article>
+
+                <article class="project-card border-box" role="listitem" tabindex="0"
+                    aria-label="ProjectX project details">
+                    <p class="project-subtitle">modern age calculator using js </p>
+                    <h3 class="project-title">Age Calculator </h3>
+                    <p class="project-desc">Online Age Calculator Web App Using JavaScript and Date Functions
+</p>
+                    <a href="https://coding-smit.github.io/Age-Calculator/" target="_blank" rel="noopener noreferrer"
+                        class="project-live-btn" aria-label="Live demo of ProjectX">
+                        Live ⇌
+                    </a>
+                </article>
+
+                <article class="project-card border-box" role="listitem" tabindex="0"
+                    aria-label="CrypTrack project details">
+                    <p class="project-subtitle">HTML CSS JavaScript Bootstrap</p>
+                    <h3 class="project-title">Tip Calculator </h3>
+                    <p class="project-desc">Tip Calculator is a simple and responsive web app that helps users quickly calculate the tip amount and total bill based on service quality and bill value.</p>
+                    <a href="https://coding-smit.github.io/tip-calculator/" target="_blank" rel="noopener noreferrer"
+                        class="project-live-btn" aria-label="Live demo of CrypTrack">
+                        Live ⇌
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" aria-labelledby="skills-title" class="my-16">
+            <h2 id="skills-title" class="section-title"><span>#skills</span> <span class="line-gradient"></span></h2>
+            <div class="skills-grid" role="list">
+
+                <div class="skill-box border-box" role="listitem" tabindex="0" aria-label="Html skill">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/03c47483-6e27-4c7b-82d5-6d1cef13afd1.png"
+                        alt="HTML5 logo in orange with black text" loading="lazy" />
+                    <span class="skill-label">html</span>
+                </div>
+
+                <div class="skill-box border-box" role="listitem" tabindex="0" aria-label="CSS skill">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/96a16cd3-4c2a-4887-9699-6ce1f8fc3608.png"
+                        alt="CSS3 logo in blue with white text" loading="lazy" />
+                    <span class="skill-label">css</span>
+                </div>
+
+                <div class="skill-box border-box" role="listitem" tabindex="0" aria-label="JavaScript skill">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/076fc199-ef7b-44b9-ab88-b2eb2fcb4290.png"
+                        alt="JavaScript logo in yellow with black text" loading="lazy" />
+                    <span class="skill-label">javascript</span>
+                </div>
+
+                <div class="skill-box border-box" role="listitem" tabindex="0" aria-label="ReactJS skill">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d7b887e6-958e-4713-99db-f32728ca212d.png"
+                        alt="ReactJS atom symbol logo in light blue with black text" loading="lazy" />
+                    <span class="skill-label">reactjs</span>
+                </div>
+
+                <div class="skill-box border-box" role="listitem" tabindex="0" aria-label="Node.js skill">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9e510461-31ac-4c54-9048-5f3fc17230b9.png"
+                        alt="Node.js logo in green with white text" loading="lazy" />
+                    <span class="skill-label">nodejs</span>
+                </div>
+
+                <div class="skill-box border-box" role="listitem" tabindex="0" aria-label="Figma skill">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/709da9aa-5667-43a5-8dc1-1a54192d7dc8.png"
+                        alt="Figma logo in red and pink with white text" loading="lazy" />
+                    <span class="skill-label">figma</span>
+                </div>
+
+                <div class="skill-box border-box" role="listitem" tabindex="0" aria-label="Git skill">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/555ffd0f-6547-4b65-b286-abc823fab6e1.png"
+                        alt="Git logo in orange red with white text" loading="lazy" />
+                    <span class="skill-label">git</span>
+                </div>
+
+                <div class="skill-box border-box" role="listitem" tabindex="0" aria-label="MySQL skill">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/12cd998a-a72d-4d11-ad1e-56c1e5141d25.png"
+                        alt="MySQL dolphin logo in teal with white text" loading="lazy" />
+                    <span class="skill-label">mysql</span>
+                </div>
+
+                <!-- <div class="skill-box border-box" role="listitem" tabindex="0" aria-label="Firebase skill">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/389a02e7-19ec-45e7-8cfc-59f5a2cbcc16.png" alt="Firebase flame logo in yellow with black text" loading="lazy" />
+          <span class="skill-label">firebase</span>
+        </div>
+
+        <div class="skill-box border-box" role="listitem" tabindex="0" aria-label="Java skill">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/387a0a3a-0fbc-4ce6-be24-c03a9f5001ae.png" alt="Java steaming coffee cup logo in brown with white text" loading="lazy" />
+          <span class="skill-label">java</span>
+        </div> -->
+
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about-me" aria-labelledby="aboutme-title" class="my-16">
+            <h2 id="aboutme-title" class="section-title"><span>#about-me</span> <span class="line-gradient"></span></h2>
+            <div class="about-contact-container">
+                <article class="about-text" tabindex="0" role="region" aria-label="About Jaydeep Meena">
+                    Hello, i'm Smit!
+
+                    <br /><br />
+                    I'm a self-taught front-end developer and UI/UX enthusiast based in Mehsana, Gujarat. I create
+                    responsive websites from scratch and transform them into modern, user-friendly web experiences with
+                    a strong focus on design and usability.
+                    <br /><br />
+                    I’m pursuing a B.Tech in Computer Science and Business Systems, blending cutting-edge technology
+                    with practical business strategies. This unique combination empowers me to create impactful
+                    solutions that drive both innovation and real-world success.
+
+                    <br /><br />
+                    <button class="about-btn" aria-label="Download Resume"
+                        onclick="window.open('https://drive.google.com/file/d/1IpqbPsH1ZWTqgmDiunVq7RfGXPSJs9Xb/view?usp=sharinghttps://drive.google.com/file/d/12NHj4bAtp1LtwbNCEXsob6vZm5neIO6M/view?usp=sharinghttps://drive.google.com/file/d/12NHj4bAtp1LtwbNCEXsob6vZm5neIO6M/view', '_blank', 'noopener')">
+                        Resume
+                        <svg aria-hidden="true" focusable="false" class="w-4 h-4" fill="none" stroke="currentColor"
+                            stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+                        </svg>
+                    </button>
+                </article>
+
+                <aside aria-hidden="true" class="about-illustration"
+                    title="Illustration of a person with pink hair hoodie working on a gray laptop with skull logo">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6a79bb12-a642-44aa-b101-1f6311fd9869.png"
+                        alt="Illustration of a young person with pink hair wearing a charcoal hoodie, looking at a laptop with a skull logo, surrounded by subtle dotted patterns on a dark black background" />
+                </aside>
+            </div>
+        </section>
+
+        <!-- Contacts Section -->
+        <section id="contacts" aria-labelledby="contacts-title" class="my-16 max-w-3xl mx-auto" tabindex="0">
+            <h2 id="contacts-title" class="section-title"><span>#contacts</span> <span class="line-gradient"></span>
+            </h2>
+            <p class="mb-6 text-gray-400 text-sm max-w-lg">
+                I’m interested in freelance opportunities. However, if you have other request or question, don’t
+                hesitate to contact me
+            </p>
+            <div class="contact-message-box" role="region" aria-label="Contact information">
+                <strong class="contact-message-title">Message me here</strong>
+                <div class="contact-item">
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="#d3d3d3" width="24" height="24">
+                        <path
+                            d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm4.75-.88a1.125 1.125 0 110 2.25 1.125 1.125 0 010-2.25z" />
+                    </svg>
+                    <span>@_patel_smit_69</span>
+                </div>
+                <div class="contact-item mt-1">
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                        <path
+                            d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                    </svg>
+                    <span>patelsmit9328@gmail.com</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-left" aria-label="Footer logo and name">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"
+                focusable="false" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 17v-6a4 4 0 018 0v6m-9 4h10M21 12v7a4 4 0 01-4 4h-8a4 4 0 01-4-4v-7" />
+            </svg>
+            Smit
+        </div>
+        <nav class="footer-right" aria-label="Social media links in footer" role="navigation">
+            <a href="https://github.com/coding-smit" target="_blank" rel="noopener noreferrer"
+                aria-label="Github profile" tabindex="0">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577V19.52c-3.338.726-4.042-1.61-4.042-1.61C4.422 16.11 3.633 15.8 3.633 15.8c-1.087-.744.083-.728.083-.728 1.205.085 1.838 1.236 1.838 1.236 1.07 1.834 2.807 1.304 3.492.997.107-.775.42-1.304.763-1.604-2.665-.3-5.466-1.335-5.466-5.933 0-1.31.47-2.38 1.237-3.222-.124-.302-.536-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.513 11.513 0 013.003-.404 11.5 11.5 0 013.003.405c2.293-1.553 3.299-1.23 3.299-1.23.654 1.653.242 2.874.118 3.176.77.842 1.235 1.911 1.235 3.222 0 4.608-2.804 5.63-5.475 5.922.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 21.796 24 17.294 24 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/smit-patel-d69/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn profile" tabindex="0">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="#d3d3d3" width="24" height="24">
+                    <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.039-1.852-3.039-1.854 0-2.137 1.445-2.137 2.939v5.669H9.354V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.37-1.852 3.604 0 4.27 2.371 4.27 5.455v6.288zM5.337 7.433a2.07 2.07 0 11-.001-4.139 2.07 2.07 0 01.001 4.139zm1.777 13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.224.792 24 1.771 24h20.451C23.2 24 24 23.224 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
+                </svg>
+            </a>
+
+            <a href="https://www.instagram.com/_patel_smit_69" target="_blank" rel="noopener noreferrer"
+                aria-label="Instagram profile" tabindex="0">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="#d3d3d3" width="24" height="24">
+                    <path
+                        d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm4.75-.88a1.125 1.125 0 110 2.25 1.125 1.125 0 010-2.25z" />
+                </svg>
+            </a>
+        </nav>
+    </footer>
+
+    <!-- Side Decorations -->
+    <div class="side-decoration side-square-top-right" aria-hidden="true"></div>
+    <div class="side-decoration side-square-bottom-right" aria-hidden="true"></div>
+    <div class="side-dots-left" aria-hidden="true">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="side-dots-right" aria-hidden="true">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

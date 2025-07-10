@@ -1,0 +1,492 @@
+        /* Custom fonts and styles */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+        body {
+        font-family: 'Roboto Mono', monospace;
+        background: #0a0a0a;
+        color: #d3d3d3;
+        scroll-behavior: smooth;
+        }
+
+        a {
+        transition: color 0.3s ease;
+        }
+
+        a:hover {
+        color: #c084fc; /* violet-300 */
+        }
+
+        .underline-violet {
+        border-color: #c084fc;
+        }
+
+        /* Custom scroll down button style */
+        .scroll-btn {
+        border: 1px solid #c084fc;
+        padding: 0.3rem 1rem;
+        font-size: 0.875rem;
+        cursor: pointer;
+        color: #c084fc;
+        background: transparent;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.3rem;
+        user-select: none;
+        }
+        .scroll-btn:hover {
+        background-color: #c084fc;
+        color: #0a0a0a;
+        }
+
+        /* Custom focus for keyboard navigation */
+        button:focus, a:focus {
+        outline-offset: 3px;
+        outline-color: #c084fc;
+        outline-style: solid;
+        outline-width: 2px;
+        }
+
+        /* Gradient line for section headings */
+        .line-gradient {
+        background-image: linear-gradient(90deg, #c084fc 0%, #a78bfa 100%);
+        height: 2px;
+        width: 6rem;
+        }
+
+        /* Border box for project cards and skill icons */
+        .border-box {
+        border: 1px solid #444;
+        transition: border-color 0.3s ease;
+        }
+        .border-box:hover {
+        border-color: #c084fc;
+        }
+    #image1{
+        filter: drop-shadow(0px 0px 5px #c084fc );
+    }
+        /* Social icons vertical bar */
+        #social-links {
+        position: fixed;
+        top: 35vh;
+        left: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        z-index: 30;
+        }
+        #social-links a svg {
+        fill: #d3d3d3;
+        width: 24px;
+        height: 24px;
+        transition: fill 0.3s ease;
+        }
+        #social-links a:hover svg {
+        fill: #c084fc;
+        }
+
+        /* Underline effect for nav links */
+        nav a {
+        position: relative;
+        color: #aaa;
+        font-size: 0.875rem;
+        letter-spacing: 0.05em;
+        user-select: none;
+        }
+        nav a:hover, nav a.active {
+        color: #c084fc;
+        }
+        nav a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        height: 2px;
+        width: 0;
+        background: #c084fc;
+        transition: width 0.3s ease;
+        border-radius: 2px;
+        }
+        nav a:hover::after, nav a.active::after {
+        width: 100%;
+        }
+
+        /* Quote box styling */
+        .quote-box {
+        border: 1px solid #444;
+        padding: 1rem 1.25rem;
+        font-size: 1rem;
+        font-style: normal;
+        white-space: pre-wrap;
+        max-width: 700px;
+        margin: 2rem auto;
+        position: relative;
+        color: #c7d0ff;
+        }
+        .quote-box::before {
+        content: '“';
+        position: absolute;
+        font-size: 3.5rem;
+        left: 1rem;
+        top: -1.2rem;
+        color: #c084fc;
+        font-weight: 700;
+        font-family: serif;
+        }
+        .quote-box::after {
+        content: '”';
+        position: absolute;
+        font-size: 3.5rem;
+        right: 1rem;
+        bottom: -1.5rem;
+        color: #c084fc;
+        font-weight: 700;
+        font-family: serif;
+        }
+        .quote-author {
+        margin-top: 1rem;
+        text-align: right;
+        font-weight: 600;
+        font-size: 0.9rem;
+        border: 1px solid #444;
+        display: inline-block;
+        padding: 0.1rem 0.75rem;
+        margin-left: auto;
+        max-width: max-content;
+        border-radius: 2px;
+        color: #d3d3d3;
+        background: #0d0d0d;
+        }
+
+        /* Section headings container */
+        .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.25rem;
+        flex-wrap: wrap;
+        }
+        .section-title {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #c084fc;
+        }
+        .section-title span {
+        white-space: nowrap;
+        }
+        .section-line {
+        flex-grow: 1;
+        border-bottom: 1px solid #444;
+        margin-left: 1rem;
+        min-width: 5rem;
+        }
+        .section-link {
+        font-size: 0.875rem;
+        color: #aaa;
+        cursor: pointer;
+        user-select: none;
+        white-space: nowrap;
+        }
+        .section-link:hover {
+        color: #c084fc;
+        }
+
+        /* Project cards container */
+        .projects-grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+        .project-card {
+        background: #0d0d0d;
+        padding: 1rem;
+        border: 1px solid #444;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        transition: border-color 0.3s ease;
+        border-radius: 4px;
+        }
+        .project-card:hover {
+        border-color: #c084fc;
+        }
+        .project-title {
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: #c084fc;
+        }
+        .project-subtitle {
+        font-weight: 700;
+        color: #ddd;
+        font-size: 0.85rem;
+        }
+        .project-desc {
+        font-size: 0.8rem;
+        line-height: 1.2;
+        min-height: 3rem;
+        }
+        .project-live-btn {
+        margin-top: auto;
+        border: 1px solid #c084fc;
+        padding: 0.25rem 0.75rem;
+        font-weight: 700;
+        font-size: 0.9rem;
+        background: transparent;
+        color: #c084fc;
+        cursor: pointer;
+        width: fit-content;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        user-select: none;
+        border-radius: 3px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .project-live-btn:hover {
+        background: #c084fc;
+        color: #0a0a0a;
+        }
+
+        /* Skills grid */
+        .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+        gap: 1rem;
+        justify-items: center;
+        margin-bottom: 2rem;
+        }
+        .skill-box {
+        border: 1px solid #444;
+        padding: 0.6rem;
+        width: 85px;
+        height: 85px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0.35rem;
+        cursor: default;
+        border-radius: 5px;
+        transition: border-color 0.3s ease;
+        background: #0d0d0d;
+        }
+        .skill-box:hover {
+        border-color: #c084fc;
+        }
+        .skill-box img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        pointer-events: none;
+        user-select: none;
+        }
+        .skill-label {
+        font-size: 0.8rem;
+        color: #bbb;
+        user-select: none;
+        }
+
+        /* About me & contact */
+        .about-contact-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+        }
+        .about-text {
+        max-width: 600px;
+        flex: 1;
+        font-size: 0.9rem;
+        color: #ccc;
+        line-height: 1.4;
+        white-space: pre-line;
+        }
+        .about-text strong {
+        color: #c084fc;
+        }
+        .about-btn {
+        margin-top: 1rem;
+        background: transparent;
+        border: 1px solid #c084fc;
+        color: #c084fc;
+        padding: 0.4rem 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        user-select: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: 3px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .about-btn:hover {
+        background: #c084fc;
+        color: #0a0a0a;
+        }
+        .about-illustration {
+        width: 220px;
+        min-width: 220px;
+        }
+
+        /* Contact message box */
+        .contact-message-box {
+        background: #0d0d0d;
+        border: 1px solid #444;
+        padding: 1rem;
+        max-width: 280px;
+        font-size: 0.85rem;
+        color: #bbb;
+        user-select: none;
+        border-radius: 5px;
+        }
+        .contact-message-title {
+        font-weight: 700;
+        border-bottom: 1px solid #444;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.3rem;
+        color: #c084fc;
+        }
+        .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        margin-top: 0.4rem;
+        }
+        .contact-item svg {
+        width: 18px;
+        height: 18px;
+        fill: #bbb;
+        flex-shrink: 0;
+        }
+        .contact-item:hover {
+        color: #c084fc;
+        }
+
+        /* Footer */
+        footer {
+        border-top: 1px solid #222;
+        padding: 1.5rem 1rem;
+        font-size: 0.8rem;
+        color: #777;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        user-select: none;
+        }
+        footer .footer-left {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-weight: 700;
+        color: #c084fc;
+        user-select: text;
+        font-size: 1rem;
+        }
+        footer .footer-left svg {
+        width: 24px;
+        height: 24px;
+        fill: #c084fc;
+        }
+        footer .footer-right {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: #777;
+        }
+        footer .footer-right a svg {
+        width: 20px;
+        height: 20px;
+        fill: #777;
+        transition: fill 0.3s ease;
+        cursor: pointer;
+        }
+        footer .footer-right a:hover svg {
+        fill: #c084fc;
+        }
+
+        /* Decorative side squares and dots */
+        .side-decoration {
+        position: fixed;
+        pointer-events: none;
+        border: 1px solid #222;
+        opacity: 0.3;
+        mix-blend-mode: screen;
+        }
+        .side-square-top-right {
+        top: 7rem;
+        right: 1.5rem;
+        width: 60px;
+        height: 60px;
+        border-radius: 3px;
+        border-color: #553c9a;
+        box-sizing: border-box;
+        }
+        .side-square-bottom-right {
+        bottom: 9rem;
+        right: 0.7rem;
+        width: 80px;
+        height: 80px;
+        border-radius: 3px;
+        border-color: #553c9a;
+        }
+        .side-dots-left {
+        top: 40vh;
+        left: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        }
+        .side-dots-left div {
+        width: 4px;
+        height: 4px;
+        background-color: #444;
+        border-radius: 9999px;
+        opacity: 0.4;
+        }
+        .side-dots-right {
+        top: 60vh;
+        right: 8.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        }
+        .side-dots-right div {
+        width: 4px;
+        height: 4px;
+        background-color: #444;
+        border-radius: 9999px;
+        opacity: 0.4;
+        }
+
+        
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+        #social-links {
+            top: auto;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            flex-direction: row;
+            gap: 2rem;
+            z-index: 30;
+        }
+        header nav {
+            display: none;
+        }
+        .about-contact-container {
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .about-illustration {
+            width: 180px;
+            min-width: unset;
+        }
+        }

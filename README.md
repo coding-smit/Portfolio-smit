@@ -8,7 +8,7 @@ Easily calculate the tip amount and split the bill between people.
 
 ## 🚀 Demo
 
-🔗 [Live Demo]() &nbsp; 
+🔗 [Live Demo](https://coding-smit.github.io/Portfolio-smit/) &nbsp; 
 
 ---
 ## ✨ Features

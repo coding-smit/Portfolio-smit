@@ -109,6 +109,9 @@
         nav a:hover::after, nav a.active::after {
         width: 100%;
         }
+        nav strong{
+            color: #c084fc;
+        }
 
         /* Quote box styling */
         .quote-box {
@@ -176,6 +179,7 @@
         .section-title span {
         white-space: nowrap;
         }
+
         .section-line {
         flex-grow: 1;
         border-bottom: 1px solid #444;
@@ -193,6 +197,15 @@
         color: #c084fc;
         }
 
+
+        /* -----humberger css  */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* -------- */
         /* Project cards container */
         .projects-grid {
         display: grid;

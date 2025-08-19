@@ -24,10 +24,3 @@
 
     // Initial call
     setActiveLink();
-
-
-
-    // -------humberger
-
-
-
